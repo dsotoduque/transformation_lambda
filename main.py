@@ -15,8 +15,8 @@ def lambda_handler(event, context):
 
         payload = transform_data(payload)
         encode_str_base = json.dumps(payload)
-        encodedBytes = base64.b64encode(encode_str_base.encode("utf-8"))
-        encodedStr = str(encodedBytes, "utf-8")
+        encoded_bytes = base64.b64encode(encode_str_base.encode("utf-8"))
+        encoded_str = str(encoded_bytes, "utf-8")
 
         output_record = {
             'recordId': record['recordId'],
