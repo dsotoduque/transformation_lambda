@@ -21,7 +21,7 @@ def lambda_handler(event, context):
         output_record = {
             'recordId': record['recordId'],
             'result': 'Ok',
-            'data': encodedStr
+            'data': encoded_str
         }
         output.append(output_record)
         print(output)
